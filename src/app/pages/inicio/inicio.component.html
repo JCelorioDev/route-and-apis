@@ -1,0 +1,24 @@
+<!-- <div class="m-3">
+    <button (click)="getPosts()">
+        Cargar Datos
+    </button>
+</div> -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">title</th>
+        <th scope="col">body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <div *ngFor="let item of data">
+        <tr>
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.title}}</td>
+            <td>{{item.body}}</td>
+        </tr>
+      </div>
+    </tbody>
+  </table>
